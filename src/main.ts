@@ -1,13 +1,16 @@
-import Vue from "vue";
-import App from "./App.vue";
-import "./registerServiceWorker";
-import router from "./router";
-import store from "./store";
+import Vue from 'vue'
+import App from './App.vue'
+import './registerServiceWorker'
+import axios from 'axios'
+import router from './router'
+import store from './store'
 
-Vue.config.productionTip = false;
+axios.defaults.baseURL = process.env.VUE_APP_SERVER || 'http://localhost:3000' // API server
+
+Vue.config.productionTip = false
 
 new Vue({
   router,
   store,
   render: h => h(App)
-}).$mount("#app");
+}).$mount('#app')
