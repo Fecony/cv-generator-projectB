@@ -1,12 +1,10 @@
 <template>
-  <div class="about">
+  <div class="404">
     <h1>404</h1>
     <p>Page not found</p>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'PageNotFound'
-}
-</script>
+<style lang="scss" scoped>
+@import '../styles/views/page-not-_found.scss';
+</style>

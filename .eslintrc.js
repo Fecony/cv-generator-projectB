@@ -25,8 +25,13 @@ module.exports = {
     {
       files: [
         '**/__tests__/*.{j,t}s?(x)',
-        '**/tests/unit/**/*.spec.{j,t}s?(x)'
+        '**/tests/unit/**/*.spec.{j,t}s?(x)',
+        '*.ts',
+        '*.tsx'
       ],
+      rules: {
+        '@typescript-eslint/no-unused-vars': [2, { args: 'none' }]
+      },
       env: {
         jest: true
       }

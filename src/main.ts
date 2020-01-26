@@ -5,7 +5,7 @@ import axios from 'axios'
 import router from './router'
 import store from './store'
 
-axios.defaults.baseURL = process.env.VUE_APP_SERVER || 'http://localhost:3000' // API server
+axios.defaults.baseURL = process.env.VUE_APP_BASE_URL || 'http://localhost:3000' // API server
 
 Vue.config.productionTip = false
 
