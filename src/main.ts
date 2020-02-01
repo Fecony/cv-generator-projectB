@@ -4,6 +4,7 @@ import './registerServiceWorker'
 import axios from 'axios'
 import router from './router'
 import store from './store'
+import '@/styles/global.scss'
 
 axios.defaults.baseURL = process.env.VUE_APP_BASE_URL || 'http://localhost:3000' // API server
 

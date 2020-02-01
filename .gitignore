@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/vue,node,vuejs,linux,macos,windows
-# Edit at https://www.gitignore.io/?templates=vue,node,vuejs,linux,macos,windows
+# Created by https://www.gitignore.io/api/vue,node,vuejs,linux,macos,windows,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=vue,node,vuejs,linux,macos,windows,visualstudiocode
 
 ### Linux ###
 *~
@@ -151,6 +151,17 @@ dist/
 tmp/
 temp/
 
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
 ### Vue ###
 .DS_*
 **/*.backup.*
@@ -196,4 +207,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/vue,node,vuejs,linux,macos,windows
+# End of https://www.gitignore.io/api/vue,node,vuejs,linux,macos,windows,visualstudiocode

@@ -6,5 +6,5 @@
 </template>
 
 <style lang="scss" scoped>
-@import '../styles/views/page-not-_found.scss';
+@import '~styles/views/page-not-found.scss';
 </style>

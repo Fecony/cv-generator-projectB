@@ -1,10 +1,16 @@
 const path = require('path')
 
 module.exports = {
-  pluginOptions: {
-    'style-resources-loader': {
-      preProcessor: 'scss',
-      patterns: [path.resolve(__dirname, './src/styles/global.scss')]
+  chainWebpack: config =>
+    config.resolve.alias.set('styles', path.resolve('src/styles')),
+  css: {
+    loaderOptions: {
+      scss: {
+        prependData: `
+          @import "@/styles/setup/_mixins.scss";
+          @import "@/styles/setup/_variables.scss";
+        `
+      }
     }
   }
 }

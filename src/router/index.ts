@@ -10,19 +10,17 @@ export default new VueRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import(/* webpackChunkName: "home" */ '@/views/Home.vue')
+      component: () => import('@/views/Home.vue')
     },
     {
       path: '/about',
       name: 'about',
-      component: () =>
-        import(/* webpackChunkName: "about" */ '@/views/About.vue')
+      component: () => import('@/views/About.vue')
     },
     {
       path: '/404',
       name: '404',
-      component: () =>
-        import(/* webpackChunkName: "404" */ '@/views/PageNotFound.vue')
+      component: () => import('@/views/PageNotFound.vue')
     },
     { path: '*', redirect: '/404' }
   ]
