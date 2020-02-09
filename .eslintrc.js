@@ -5,6 +5,7 @@ module.exports = {
     browser: true
   },
   extends: [
+    'prettier',
     'plugin:vue/essential',
     '@vue/prettier',
     '@vue/typescript',
