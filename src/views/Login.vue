@@ -14,9 +14,12 @@
           <div class="login__method">Sign Up</div>
         </div>
         <form class="login__form" @submit.prevent="onLogin">
-          <!-- change to components -->
-          <input type="text" />
-          <input type="password" />
+          <c-input v-model="userData.email" type="email" label="Email" />
+          <c-input
+            v-model="userData.password"
+            type="password"
+            label="Password"
+          />
           <c-button xclass="--auth">Login</c-button>
         </form>
       </div>
@@ -27,15 +30,19 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import CButton from '@/components/shared/CButton.vue'
+import CInput from '@/components/shared/CInput.vue'
 
 @Component({
-  components: {
-    CButton
-  }
+  components: { CButton, CInput }
 })
 export default class Login extends Vue {
+  userData = {
+    email: '',
+    password: ''
+  }
+
   onLogin() {
-    console.log('logged')
+    console.log(`logged in as: ${this.userData.email}`)
   }
 }
 </script>
