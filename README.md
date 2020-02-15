@@ -1,5 +1,8 @@
 # CV Generator 📝
 
+[![codecov](https://codecov.io/gh/Fecony/cv-generator-projectB/branch/master/graph/badge.svg?token=KtwYE8CFQh)](https://codecov.io/gh/Fecony/cv-generator-projectB)
+[![Build Status](https://travis-ci.com/Fecony/cv-generator-projectB.svg?token=KquVGmQ9CBMhcoabSNv9&branch=master)](https://travis-ci.com/Fecony/cv-generator-projectB)
+
 App for generating CV depending on your MD / JSON / PDF file.
 
 ## Getting Started

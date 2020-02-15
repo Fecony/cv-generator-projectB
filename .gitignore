@@ -207,4 +207,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Coverage folder
+/coverage
+
 # End of https://www.gitignore.io/api/vue,node,vuejs,linux,macos,windows,visualstudiocode
