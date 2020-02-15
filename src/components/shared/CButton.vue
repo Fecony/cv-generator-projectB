@@ -1,9 +1,5 @@
 <template>
-  <button
-    class="button"
-    :class="[xclass ? `button${xclass}` : '']"
-    @click="onClick($event)"
-  >
+  <button class="button" :class="[xclass ? `button${xclass}` : '']">
     <slot>Button</slot>
   </button>
 </template>
@@ -14,10 +10,6 @@ import { Component, Vue, Prop } from 'vue-property-decorator'
 @Component
 export default class CButton extends Vue {
   @Prop(String) readonly xclass!: string
-
-  onClick(e: Event) {
-    this.$emit('click', e)
-  }
 }
 </script>
 

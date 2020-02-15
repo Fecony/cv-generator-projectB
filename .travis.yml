@@ -8,7 +8,8 @@ install:
   - npm install
 script:
   - npm run test:unit
-  - codecov -f coverage/*.json
+after_success:
+  - codecov
 env:
   global:
     secure: TVTPHfrqi99d4V55sWB3SWL6jPtsqEvPcN0HqIxwPDt1nBhXa44VHVsu9gPz6JWNa8RqhEcJzwP7l2MMjb8ZFq7B7lJxa9268KZhZB3la3R7K++oyqchXjqnoehkA5/ilas1G9QvnRkJDIkNFnE8j2/li1/4yaYwmCA4/H+y50np/9WTzN5p/n/YREY5sNkQavLMJyOdusZn/eIb3ezC1EVCabJdU9srKvI29TyeQ769LMQA89Q0lNlt9ulqGf8C6i+FoE6dfSa4tkzKoOK8MGnq7H0kPYRn+oVsnNvdG1bps5pElSbHzcu8eJeVPYpSEh1bTexmZTdTe0/Vx1iOR8oyfL2LDKsvOsXDVtlVkNwDaZIenwwOqDGD39zrbqlHGNm8YrPvgeDJXDh8L/ckknpInbwTOHLPavYS9BFabLalXMV9OdDDIqhZIQkzEx65EF+mHoWdTacAh21BCSpXmYPXCx2RJtxVbDfU/AxtvbZ8JAMiVQJrd6ybdVF4GTlq7I9l+hSVbuUJVE/H6lVM7egAzq7hgLcny0jRhSeqHW5HV/X8fnJojbHP8QOWlX4sl8kFjMwfHCUiCIjH2acdGlGT5qWxjCNhay3abI5qv8oe6yEvYhH/yf43klmNtgRCGuGL8GMeOBdy/wKBm7XrwwbXYnd1sVEVRbERD6hXJSQ=
