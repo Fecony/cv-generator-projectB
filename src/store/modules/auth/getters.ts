@@ -9,5 +9,8 @@ export const getters: GetterTree<AuthState, RootState> = {
     const lastName = (user && user.lastName) || ''
 
     return `${firstName} ${lastName}`
+  },
+  isAuth(state): boolean {
+    return Boolean(state.token)
   }
 }

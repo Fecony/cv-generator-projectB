@@ -10,7 +10,7 @@
       </div>
       <div class="login__right">
         <div class="login__methods">
-          <div class="login__method login__method--active">Login</div>
+          <div class="login__method login__method--active">Log in</div>
           <div class="login__method">Sign Up</div>
         </div>
         <form class="login__form" @submit.prevent="onLogin">
@@ -48,5 +48,5 @@ export default class Login extends Vue {
 </script>
 
 <style scoped lang="scss">
-@import '~styles/views/login.scss';
+@import '~styles/pages/login';
 </style>

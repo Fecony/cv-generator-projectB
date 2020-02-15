@@ -1,9 +1,0 @@
-@mixin pseudo($display: block, $pos: absolute, $content: '') {
-  content: $content;
-  display: $display;
-  position: $pos;
-}
-
-@mixin letter-spacing($spacing) {
-  letter-spacing: ($spacing / 1000) * 1em;
-}

@@ -1,25 +1,29 @@
 import { ActionTree } from 'vuex'
 import { login, register } from '@/api/auth.api'
-import { AuthState, UserData } from './types'
+import { AuthState, FormData } from './types'
 import { RootState } from '../types'
 
 export const actions: ActionTree<AuthState, RootState> = {
-  async login({ commit }, payload: UserData) {
-    try {
-      const response = await login(payload)
-      commit('SET_USER', response)
-    } catch (error) {
-      console.log(`Login error: ${error}`)
-      commit('AUTH_ERROR', error)
+  async login({ commit }, formData: FormData) {
+    const [res, error] = await login(formData)
+
+    if (error) {
+      return { status: error }
+    } else {
+      commit('SET_TOKEN', res.token)
+      commit('SET_USER', res.user)
+      return { status: 'success' }
     }
   },
-  async register({ commit }, payload: UserData) {
-    try {
-      const response = await register(payload)
-      commit('SET_USER', response)
-    } catch (error) {
-      console.log(`Registration error: ${error}`)
-      commit('AUTH_ERROR', error)
+  async register({ commit }, formData: FormData) {
+    const [res, error] = await register(formData)
+
+    if (error) {
+      return { status: error }
+    } else {
+      commit('SET_TOKEN', res.token)
+      commit('SET_USER', res.user)
+      return { status: 'success' }
     }
   }
 }

@@ -1,4 +1,4 @@
-export interface UserData {
+export interface FormData {
   email: string
   password: string
 }
@@ -8,10 +8,9 @@ export interface User {
   firstName: string
   lastName: string
   email: string
-  token: string
 }
 
 export interface AuthState {
   user?: User
-  error: string | null
+  token: string
 }

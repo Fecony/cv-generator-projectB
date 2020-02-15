@@ -5,5 +5,5 @@
 </template>
 
 <style lang="scss">
-@import '~normalize-scss/sass/normalize/import-now';
+@import '~styles/base/reset';
 </style>

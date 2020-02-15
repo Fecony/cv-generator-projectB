@@ -22,5 +22,5 @@ export default class CButton extends Vue {
 </script>
 
 <style scoped lang="scss">
-@import '~styles/basics/buttons.scss';
+@import '~styles/components/shared/button';
 </style>

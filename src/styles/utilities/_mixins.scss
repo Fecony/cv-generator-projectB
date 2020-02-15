@@ -1,0 +1,25 @@
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+// Letter spacing from Adobe XD design to px
+@mixin letter-spacing($spacing) {
+  letter-spacing: ($spacing / 1000) * 1em;
+}
+
+/* rem font size with fallback to px
+ * Usage: @include font-size(14px) */
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}

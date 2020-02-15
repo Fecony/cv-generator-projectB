@@ -11,5 +11,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~styles/views/home.scss';
+@import '~styles/pages/home';
 </style>

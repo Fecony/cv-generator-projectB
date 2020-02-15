@@ -1,8 +1,8 @@
 .button {
   @include letter-spacing(128);
-  background-color: $base-white-color;
-  border: 2px solid $base-black-color;
-  color: $base-black-color;
+  background-color: $white-color;
+  border: 2px solid $black-color;
+  color: $black-color;
   cursor: pointer;
   font-weight: bold;
   font-size: 14px;
@@ -12,7 +12,7 @@
   height: 50px;
 
   &--auth:hover {
-    color: $base-white-color;
+    color: $white-color;
     background-color: $shape-color;
     border-color: $shape-color;
   }

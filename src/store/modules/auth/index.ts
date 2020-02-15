@@ -7,7 +7,7 @@ import { RootState } from '../types'
 
 export const state: AuthState = {
   user: undefined,
-  error: null
+  token: ''
 }
 
 const namespaced: boolean = true

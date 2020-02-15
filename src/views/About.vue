@@ -5,5 +5,5 @@
 </template>
 
 <style lang="scss" scoped>
-@import '~styles/views/about.scss';
+@import '~styles/pages/about';
 </style>
