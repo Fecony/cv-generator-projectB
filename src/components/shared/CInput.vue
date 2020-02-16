@@ -5,6 +5,7 @@
       class="form-field__input"
       v-bind="$attrs"
       :value="value"
+      :type="type"
       v-on="$listeners"
       @input="$emit('update', $event.target.value)"
     />

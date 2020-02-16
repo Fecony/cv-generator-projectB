@@ -6,6 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
+    "test:watch": "vue-cli-service test:unit --watch",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@types/jest": "^24.9.1",
+    "@types/vue": "^2.0.0",
     "@vue/cli-plugin-eslint": "^4.2.2",
     "@vue/cli-plugin-pwa": "^4.2.2",
     "@vue/cli-plugin-router": "^4.2.2",

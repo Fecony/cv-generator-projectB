@@ -5,6 +5,13 @@
   </div>
 </template>
 
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+
+@Component
+export default class PageNotFound extends Vue {}
+</script>
+
 <style lang="scss" scoped>
 @import '~styles/pages/page-not-found';
 </style>

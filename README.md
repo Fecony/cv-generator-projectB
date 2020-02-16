@@ -1,5 +1,6 @@
 # CV Generator 📝
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8fe3b302-61e5-466e-9171-0fa891abc304/deploy-status)](https://app.netlify.com/sites/pb-cv-gen/deploys)
 [![codecov](https://codecov.io/gh/Fecony/cv-generator-projectB/branch/master/graph/badge.svg?token=KtwYE8CFQh)](https://codecov.io/gh/Fecony/cv-generator-projectB)
 [![Build Status](https://travis-ci.com/Fecony/cv-generator-projectB.svg?token=KquVGmQ9CBMhcoabSNv9&branch=master)](https://travis-ci.com/Fecony/cv-generator-projectB)
 

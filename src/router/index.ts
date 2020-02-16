@@ -1,6 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+import Home from '@/views/Home.vue'
+import About from '@/views/About.vue'
+import Login from '@/views/Login.vue'
+import PageNotFound from '@/views/PageNotFound.vue'
+
 Vue.use(VueRouter)
 
 export default new VueRouter({
@@ -10,22 +15,22 @@ export default new VueRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('@/views/Home.vue')
+      component: Home
     },
     {
       path: '/login',
       name: 'login',
-      component: () => import('@/views/Login.vue')
+      component: Login
     },
     {
       path: '/about',
       name: 'about',
-      component: () => import('@/views/About.vue')
+      component: About
     },
     {
       path: '/404',
       name: '404',
-      component: () => import('@/views/PageNotFound.vue')
+      component: PageNotFound
     },
     { path: '*', redirect: '/404' }
   ]
