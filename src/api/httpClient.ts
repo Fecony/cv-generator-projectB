@@ -12,4 +12,13 @@ const axiosConfig: AxiosRequestConfig = {
 
 const httpClient: AxiosInstance = axios.create(axiosConfig)
 
+const getAuthToken = () => localStorage.getItem('cv_gen:token')
+
+const authInterceptor = (config: AxiosRequestConfig) => {
+  config.headers['Authorization'] = getAuthToken()
+  return config
+}
+
+httpClient.interceptors.request.use(authInterceptor)
+
 export default httpClient
